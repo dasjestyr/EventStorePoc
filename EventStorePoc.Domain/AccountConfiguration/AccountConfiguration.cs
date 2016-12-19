@@ -58,7 +58,7 @@ namespace EventStorePoc.Domain.AccountConfiguration
         {
             return new AccountConfigurationSnapshot(Id)
             {
-                IsActive = true
+                IsActive = _isActive
             };
         }
     }

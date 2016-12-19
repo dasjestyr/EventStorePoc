@@ -23,7 +23,7 @@ namespace EventStorePoc.Lib.EventStoreFacade
         public Guid EntityId { get; set; }
 
         /// <summary>
-        /// Gets or sets the event identifier.
+        /// Gets or sets the event identifier. Used for idempotent operations.
         /// </summary>
         /// <value>
         /// The event identifier.
@@ -31,7 +31,7 @@ namespace EventStorePoc.Lib.EventStoreFacade
         public Guid EventId { get; set; }
 
         /// <summary>
-        /// Gets or sets the version.
+        /// Gets or sets the version (the event sequence number).
         /// </summary>
         /// <value>
         /// The version.
@@ -39,7 +39,7 @@ namespace EventStorePoc.Lib.EventStoreFacade
         public int Version { get; set; }
 
         /// <summary>
-        /// Gets or sets the reason.
+        /// Gets or sets the reason for the event.
         /// </summary>
         /// <value>
         /// The reason.
